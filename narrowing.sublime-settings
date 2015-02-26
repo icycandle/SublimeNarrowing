@@ -1,0 +1,14 @@
+{
+    "extensions":
+    // Insert for each of your file type the starting and ending
+    // comment characters for line comments.
+    // It's required to insert delimiter lines if you have more than
+    // one region selected.
+    {
+        "py": ["#", ""],
+        "css": ["/*", "*/"],
+        "htm": ["<!--", "-->"],
+        "html": ["<!--", "-->"],
+        "au3": [";", ""]
+    }
+}
