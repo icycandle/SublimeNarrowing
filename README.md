@@ -9,7 +9,8 @@ But origin version cant handle unicode content, so i made little patch here.
 
 My `User/Default (OSX).sublime-keymap`
 ```javascript
-    // Custom package Narrow
+    // open selected region in new window
     { "keys": ["ctrl+shift+n"], "command": "narrow" },
+    // close window and write changed text back
     { "keys": ["ctrl+shift+c"], "command": "narrow", "args": {"action": "replace"} },
 ```
