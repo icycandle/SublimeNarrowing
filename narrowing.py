@@ -3,6 +3,7 @@ import sublime
 import sublime_plugin
 import os
 import re
+import sys
 
 SETTINGS_FILE = "narrowing.sublime-settings"
 extensions = None
@@ -37,8 +38,8 @@ class NarrowCommand(sublime_plugin.TextCommand):
                 regions.append([region.a, region.b])
                 sdelim = delimiter_line if n > 1 else ''
                 string_insert = '%s%s%s\n' % (string_insert, sdelim, text)
-            with open(tmp_file, 'w') as f:
-                f.write(string_insert)
+            with open(tmp_file, 'wb') as f:
+                f.write(string_insert.encode(sys.getfilesystemencoding()))
             self.window.open_file(tmp_file)
 
         elif action == 'replace':
