@@ -1,5 +1,5 @@
 # SublimeNarrowing
-Sublime Test 3 code narrowing like vim plugin NrrwRgn
+Sublime Text 3 code narrowing like vim plugin NrrwRgn
 
 Just copy source code from [sublimetext.com/forum/](https://www.sublimetext.com/forum/viewtopic.php?f=3&t=17077)
 
